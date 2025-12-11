@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavy Logistics Division</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">LOGISTICS COMMAND</div>
+        <div class="status-light">SYSTEM OPERATIONAL</div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>STRATEGIC AIRLIFT</h1>
+            <div class="hazard-stripe"></div>
+            <p>HEAVY PAYLOAD // GLOBAL REACH // TACTICAL SUPPORT</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="control-panel">
+            <div class="filter-box">
+                <label>MANUFACTURER</label>
+                <select id="origin-filter">
+                    <option value="all">ALL SECTORS</option>
+                    <option value="United States">USA</option>
+                    <option value="Russia">RUSSIA / UKRAINE</option>
+                    <option value="Europe">EUROPE</option>
+                    <option value="China">CHINA</option>
+                    <option value="Other">OTHER (BRAZIL/JAPAN)</option>
+                </select>
+            </div>
+            
+            <div class="filter-box">
+                <label>PROPULSION</label>
+                <select id="prop-filter">
+                    <option value="all">ALL SYSTEMS</option>
+                    <option value="Jet">JET ENGINE</option>
+                    <option value="Turboprop">TURBOPROP</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label>MISSION TYPE</label>
+                <select id="role-filter">
+                    <option value="all">ALL CLASSES</option>
+                    <option value="Strategic">STRATEGIC</option>
+                    <option value="Tactical">TACTICAL</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="fleet-grid" class="grid-container">
+            </section>
+    </main>
+
+    <footer>
+        <p>RESTRICTED DATABASE // CARGO OPS DIVISION &copy; 2024</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

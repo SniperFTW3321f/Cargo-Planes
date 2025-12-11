@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="page-title">Aircraft Details</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="detail.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <a href="index.html" class="back-link">◀ RETURN TO FLEET</a>
+            <div class="logo">TECHNICAL DATA SHEET</div>
+        </nav>
+
+        <main class="details-container">
+            <div class="details-image">
+                <img id="detail-img" src="" alt="Aircraft">
+                <div class="image-overlay">
+                    <span id="detail-role" class="role-badge">ROLE</span>
+                </div>
+            </div>
+
+            <div class="details-info">
+                <h1 id="detail-name">AIRCRAFT NAME</h1>
+                <h3 id="detail-origin" class="origin-subtitle">ORIGIN</h3>
+                
+                <div class="hazard-stripe" style="width: 100px; margin: 20px 0;"></div>
+
+                <p id="detail-desc" class="description">Loading description...</p>
+
+                <div class="specs-grid">
+                    <div class="spec-box">
+                        <label>MAX SPEED</label>
+                        <span id="spec-speed">-</span>
+                    </div>
+                    <div class="spec-box">
+                        <label>RANGE</label>
+                        <span id="spec-range">-</span>
+                    </div>
+                    <div class="spec-box">
+                        <label>PAYLOAD</label>
+                        <span id="spec-payload">-</span>
+                    </div>
+                    <div class="spec-box">
+                        <label>WINGSPAN</label>
+                        <span id="spec-wingspan">-</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>RESTRICTED DATABASE // CARGO OPS DIVISION &copy; 2024</p>
+        </footer>
+
+        <script src="data.js"></script>
+        <script src="details.js"></script>
+    </body>
+    </html>
